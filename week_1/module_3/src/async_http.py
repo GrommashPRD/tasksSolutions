@@ -15,7 +15,7 @@ from asyncio import Semaphore
 import aiohttp
 from aiohttp import ClientError, ClientTimeout
 
-from week_1.module_3.src import constants
+from week_1 import constants
 
 
 async def fetch_url(
