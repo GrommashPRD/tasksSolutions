@@ -7,7 +7,7 @@ import aiohttp
 from aiohttp import ClientError
 from aiohttp.client_exceptions import ClientConnectionError, ServerTimeoutError
 
-from week_1.module_3.src import constants
+from week_1 import constants
 
 # TODO \
 #  Напишите асинхронную функцию fetch_urls, которая принимает файл со списком урлов \
