@@ -1,3 +1,5 @@
+from typing import Optional, List
+
 # TODO: \
 # Дан отсортированный список чисел, например: [1, 2, 3, 45, 356, 569, 600, 705, 923]\
 # Список может содержать миллионы элементов.\
@@ -6,7 +8,7 @@
 # Требуемая сложность алгоритма O(log n).
 
 
-def search(numbers, number) -> bool:
+def search(numbers: Optional[List], number:Optional[int]) -> bool:
     left = 0
     right = len(numbers) - 1
 

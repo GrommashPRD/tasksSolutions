@@ -2,6 +2,7 @@
 name = "tasks"
 version = "0.1.0"
 dependencies = [
+    "ijson>=3.4.0",
     "ruff>=0.12.11",
 ]
 

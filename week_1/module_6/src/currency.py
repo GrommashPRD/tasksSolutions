@@ -1,6 +1,7 @@
 import http.server
 import json
 import urllib.request
+import urllib.error as http_errors
 
 from week_1 import constants
 
