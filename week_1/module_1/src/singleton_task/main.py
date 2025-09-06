@@ -1,6 +1,5 @@
-from week_1.module_1.src.singleton_task import singleton_for_import
+from week_1.module_1.src.singleton_task.singleton_for_import import singleton_instance
 
-singleton1 = singleton_for_import.Singleton()
-singleton2 = singleton_for_import.Singleton()
+singleton_instance.value = "Some value for import's singleton"
 
-print(singleton1 is singleton2)
+print(singleton_instance.value)

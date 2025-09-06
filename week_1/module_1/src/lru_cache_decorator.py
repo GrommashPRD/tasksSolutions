@@ -10,9 +10,8 @@ from collections import OrderedDict
 # Декоратор должно быть возможно использовать двумя способами: с указанием максимального кол-ва элементов и без.
 
 
-def lru_cache(*args, **kwargs):
+def lru_cache(func=None, maxsize=128):
     def decorator(func):
-        maxsize = kwargs.get("maxsize", float("inf"))
 
         cache = OrderedDict()
 
@@ -35,8 +34,8 @@ def lru_cache(*args, **kwargs):
 
         return wrapper
 
-    if len(args) == 1 and callable(args[0]):
-        return decorator(args[0])
+    if func is not None:
+        return decorator(func)
 
     return decorator
 
